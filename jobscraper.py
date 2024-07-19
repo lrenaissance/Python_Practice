@@ -6,7 +6,7 @@ all_jobs=[]
 
 # 페이지 처리
 def scrape_page(url):
-  print(f"Scrapping {url}...")
+  print(f"Scraping {url}...")
   response=requests.get(url)
   
   soup=BeautifulSoup(response.content, "html.parser",)
